@@ -1,0 +1,72 @@
+html {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/NYC_14th_Street_looking_west_12_2005.jpg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  vertical-align: baseline;
+}
+body {
+}
+img {
+  margin: auto;
+}
+.inner-wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  height: 300px;
+  width: 500px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 100px;
+  width: 400px;
+}
+.input {
+  margin-top: auto;
+}
+.email-space {
+  margin-top: 20px;
+}
+.email-space input[type="text"] {
+  width: 80%;
+  font-size: 20px;
+}
+.password-space {
+  margin-top: 20px;
+}
+.password-space input[type="text"] {
+  width: 80%;
+  font-size: 20px;
+}
+.sign-in {
+  margin-top: 20px;
+}
+.sign-in input[type="submit"] {
+  background: #287bbc;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1b5480;
+}
+.footer {
+  background: black;
+}
+.member-question {
+  margin-top: 25px;
+}
+.member-question span {
+  color: blue;
+}
