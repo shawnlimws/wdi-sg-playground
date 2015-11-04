@@ -1,0 +1,24 @@
+-- Day 2 --
+git add remote "url" - to link up the git repository
+git pull origin master - pull git
+
+git remote rename origin upstream
+create a fork from the notes
+git remote
+
+css:
+can set by class or give an element id
+id only can use once
+class can use many times
+.class {type css}
+#id {type css}
+
+-- Day 3 --
+Making a text appear when you hover over a button 
+button {}
+button:hover + .container {
+display: block;
+}
+.container {
+display: none:
+}
