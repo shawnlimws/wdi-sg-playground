@@ -16,19 +16,17 @@ img {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
   height: 300px;
-  width: 500px;
-  flex-direction: column;
+  max-width: 450px;
   padding-top: 50px;
   padding-bottom: 20px;
   margin: auto;
   margin-top: 100px;
 }
 .logo {
-  display: flex;
 }
 .logo img {
   height: 100px;
-  width: 400px;
+  max-width: 350px;
 }
 .input {
   margin-top: auto;
