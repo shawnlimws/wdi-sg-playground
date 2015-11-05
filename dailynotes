@@ -14,7 +14,7 @@ class can use many times
 #id {type css}
 
 -- Day 3 --
-Making a text appear when you hover over a button 
+Making a text appear when you hover over a button
 button {}
 button:hover + .container {
 display: block;
@@ -22,3 +22,15 @@ display: block;
 .container {
 display: none:
 }
+
+— Day 4 —
+1) create all the content
+2) create all the selectors in css
+3) slowly input the css
+4) javascript - make it interactive
+
+always use the === to avoid complications
+
+arguments are what happen in functions, parameters are what you put inside
+function (x) - x is the argument
+function (123) - 123 is the parameter
