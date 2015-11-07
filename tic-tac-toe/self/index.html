@@ -6,6 +6,11 @@
   </head>
   <body>
     <h1>Tic Tac Toe</h1>
+    <p>
+      <div class="selectTurn">
+        O Turn
+      </div>
+      <p>
     <div class="row">
       <button id="button1"></button>
       <button id="button2"></button>
@@ -35,9 +40,11 @@
     }
     this.innerHTML = currentPlayer
     if (currentPlayer === 'O') {
-      currentPlayer = 'X'
+      currentPlayer = 'X';
+      document.querySelector('.selectTurn').innerHTML = 'X Turn'
     } else {
-      currentPlayer = 'O'
+      currentPlayer = 'O';
+      document.querySelector('.selectTurn').innerHTML = 'O Turn'
     }
     checkWinner()
   }
