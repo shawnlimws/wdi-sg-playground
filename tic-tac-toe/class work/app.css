@@ -1,0 +1,18 @@
+body {
+  background-color: lightsalmon;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tile {
+  border: 10px solid black;
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

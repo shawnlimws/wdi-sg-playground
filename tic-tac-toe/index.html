@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="row">
+      <button id="button1"></button>
+      <button id="button2"></button>
+      <button id="button3"></button>
+    </div>
+    <div class="row">
+      <button id="button4"></button>
+      <button id="button5"></button>
+      <button id="button6"></button>
+    <div class="row">
+      <button id="button7"></button>
+      <button id="button8"></button>
+      <button id="button9"></button>
+    </div>
+    <p>
+    <div>
+      <button id="playButton">Play Again</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+
+  var currentPlayer = 'O'
+
+  function pickSquare () {
+    if (this.innerHTML !== '') {
+      return
+    }
+    this.innerHTML = currentPlayer
+    if (currentPlayer === 'O') {
+      currentPlayer = 'X'
+    } else {
+      currentPlayer = 'O'
+    }
+    checkWinner()
+  }
+
+  function checkCombination(x, y, z) {
+    if (x.innerHTML !== '' && x.innerHTML === y.innerHTML && x.innerHTML === z.innerHTML) {
+      x.style.background = 'aquamarine'
+      y.style.background = 'aquamarine'
+      z.style.background = 'aquamarine'
+    }
+  }
+  function checkWinner() {
+    // check rows
+    checkCombination(button1, button2, button3)
+    checkCombination(button4, button5, button6)
+    checkCombination(button7, button8, button9)
+    // check columns
+    checkCombination(button1, button4, button7)
+    checkCombination(button2, button5, button8)
+    checkCombination(button3, button6, button9)
+    // check diagonals
+    checkCombination(button1, button5, button9)
+    checkCombination(button3, button5, button7)
+  }
+
+
+  button1.onclick = pickSquare
+  button2.onclick = pickSquare
+  button3.onclick = pickSquare
+  button4.onclick = pickSquare
+  button5.onclick = pickSquare
+  button6.onclick = pickSquare
+  button7.onclick = pickSquare
+  button8.onclick = pickSquare
+  button9.onclick = pickSquare
+  playButton.onclick = resetGame
+
+function resetGame() {
+  button1.innerHTML = ''
+  button2.innerHTML = ''
+  button3.innerHTML = ''
+  button4.innerHTML = ''
+  button5.innerHTML = ''
+  button6.innerHTML = ''
+  button7.innerHTML = ''
+  button8.innerHTML = ''
+  button9.innerHTML = ''
+  button1.style.background = ''
+  button2.style.background = ''
+  button3.style.background = ''
+  button4.style.background = ''
+  button5.style.background = ''
+  button6.style.background = ''
+  button7.style.background = ''
+  button8.style.background = ''
+  button9.style.background = ''
+}
+
+  </script>
+</html>

@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  align-content: center;
+  text-align: center;
+}
+h1, h2 {
+  color: white;
+}
+
+  )
+.row {
+}
+
+button {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  margin: 2px 1px;
+  font-size: 60px;
+  vertical-align: top;
+  border: 0px;
+  border-radius: 25px;
+}
+
+button#playButton {
+  width: 300px;
+  background-color: aquamarine;
+  color: black;
+  font-size: 20px;
+}
