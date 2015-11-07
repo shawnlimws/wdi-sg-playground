@@ -12,18 +12,18 @@
       </div>
       <p>
     <div class="row">
-      <button id="button1"></button>
-      <button id="button2"></button>
-      <button id="button3"></button>
+      <button class="tile" id="button1"></button>
+      <button class="tile" id="button2"></button>
+      <button class="tile" id="button3"></button>
     </div>
     <div class="row">
-      <button id="button4"></button>
-      <button id="button5"></button>
-      <button id="button6"></button>
+      <button class="tile" id="button4"></button>
+      <button class="tile" id="button5"></button>
+      <button class="tile" id="button6"></button>
     <div class="row">
-      <button id="button7"></button>
-      <button id="button8"></button>
-      <button id="button9"></button>
+      <button class="tile" id="button7"></button>
+      <button class="tile" id="button8"></button>
+      <button class="tile" id="button9"></button>
     </div>
     <p>
     <div>
@@ -51,11 +51,15 @@
 
   function checkCombination(x, y, z) {
     if (x.innerHTML !== '' && x.innerHTML === y.innerHTML && x.innerHTML === z.innerHTML) {
-      x.style.background = 'aquamarine'
-      y.style.background = 'aquamarine'
-      z.style.background = 'aquamarine'
+      x.style.background = 'aquamarine';
+      y.style.background = 'aquamarine';
+      z.style.background = 'aquamarine';
+      document.querySelector('.selectTurn').innerHTML = 'Winner is ' + x.innerHTML + '!'
+      document.getElementsByClassName('tile').disabled = true;
+      endGame()
     }
   }
+
   function checkWinner() {
     // check rows
     checkCombination(button1, button2, button3)
@@ -101,6 +105,29 @@ function resetGame() {
   button7.style.background = ''
   button8.style.background = ''
   button9.style.background = ''
+  currentPlayer = 'O'
+  document.querySelector('.selectTurn').innerHTML = 'O Turn'
+  document.getElementById('button1').disabled = false
+  document.getElementById('button2').disabled = false
+  document.getElementById('button3').disabled = false
+  document.getElementById('button4').disabled = false
+  document.getElementById('button5').disabled = false
+  document.getElementById('button6').disabled = false
+  document.getElementById('button7').disabled = false
+  document.getElementById('button8').disabled = false
+  document.getElementById('button9').disabled = false
+}
+
+function endGame() {
+  document.getElementById('button1').disabled = true
+  document.getElementById('button2').disabled = true
+  document.getElementById('button3').disabled = true
+  document.getElementById('button4').disabled = true
+  document.getElementById('button5').disabled = true
+  document.getElementById('button6').disabled = true
+  document.getElementById('button7').disabled = true
+  document.getElementById('button8').disabled = true
+  document.getElementById('button9').disabled = true
 }
 
   </script>
