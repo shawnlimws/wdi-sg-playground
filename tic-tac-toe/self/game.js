@@ -15,6 +15,7 @@ var button9 = document.getElementById('button9')
 
 var playButton = document.getElementById('playButton')
 
+//Choosin the square
 function pickSquare () {
   if (this.innerHTML !== '') {
     return
@@ -28,13 +29,17 @@ function pickSquare () {
     document.querySelector('.selectTurn').innerHTML = 'O Turn'
   }
   checkWinner()
+  this.className = 'occupied'
 }
+// Disable hover function after picking
 
+
+// Checking for winner
 function checkCombination (x, y, z) {
   if (x.innerHTML !== '' && x.innerHTML === y.innerHTML && x.innerHTML === z.innerHTML) {
-    x.style.background = 'aquamarine'
-    y.style.background = 'aquamarine'
-    z.style.background = 'aquamarine'
+    x.style.background = 'firebrick'
+    y.style.background = 'firebrick'
+    z.style.background = 'firebrick'
     document.querySelector('.selectTurn').innerHTML = 'Winner is ' + x.innerHTML + '!'
 
     /* We get a NodeList from getElementsByClassName and not an Array instance.
@@ -43,6 +48,8 @@ function checkCombination (x, y, z) {
      */
     Array.from(document.getElementsByClassName('tile'))
       .forEach(tile => tile.disabled = true)
+    Array.from(document.getElementsByClassName('tile'))
+        .forEach(tile => tile.className = 'occupied')
 
     /* More verbosely:
 
@@ -113,6 +120,8 @@ function resetGame () {
   button7.disabled = false
   button8.disabled = false
   button9.disabled = false
+  Array.from(document.getElementsByClassName('occupied'))
+    .forEach(tile => tile.className = 'tile')
 }
 
 function endGame () {
