@@ -1,0 +1,150 @@
+{
+  "instructors": [
+    {
+      "name": "Sebastiaan Deckers",
+      "title": "Instructor",
+      "imagePath": "img/cbas.jpg",
+      "githubURL": "https://github.com/cbas"
+    },
+    {
+      "name": "Cheryl Wee",
+      "title": "Teaching Assistant",
+      "imagePath": "img/cheryl.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    }
+  ],
+  "students": [
+    {
+      "name": "Albert Salim",
+      "title": "Student",
+      "imagePath": "img/albert.png",
+      "githubURL": "https://github.com/caalberts"
+    },
+    {
+      "name": "Jesstern Rays",
+      "title": "Student",
+      "imagePath": "img/jsstrn.png",
+      "githubURL": "https://github.com/jsstrn"
+    },
+    {
+      "name": "Calvin Tan",
+      "title": "Student",
+      "imagePath": "img/calvin.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Tian",
+      "title": "Student",
+      "imagePath": "img/Tian.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Steve Tan",
+      "title": "Student",
+      "imagePath": "img/Steve.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Wee JH",
+      "title": "Student",
+      "imagePath": "img/weejh.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "David Sng",
+      "title": "Student",
+      "imagePath": "img/DavidSng.jpeg",
+      "githubURL": "https://github.com/y10j"
+    },
+    {
+      "name": "Irvin Lin",
+      "title": "Student",
+      "imagePath": "img/irvin.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Yong Jun",
+      "title": "Student",
+      "imagePath": "img/yongjun.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Roy Koh",
+      "title": "Student",
+      "imagePath": "img/roykoh.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Eddie Penoyar",
+      "title": "Student",
+      "imagePath": "http://i.imgur.com/aC78Pho.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Jared Tong",
+      "title": "Student",
+      "imagePath": "img/tongrhj.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Qiyu",
+      "title": "Student",
+      "imagePath": "img/qiyu.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Melvin",
+      "title": "Student",
+      "imagePath": "img/melvin.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Jeremy Tan",
+      "title": "Student",
+      "imagePath": "img/wytanj.jpg",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    },
+    {
+      "name": "Your Name Here",
+      "title": "Student",
+      "imagePath": "img/man.png",
+      "githubURL": "https://github.com/yourGitHubUsername"
+    }
+  ]
+}
