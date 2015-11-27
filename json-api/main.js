@@ -6,8 +6,17 @@ var includes = require('lodash.includes')
 var sortBy = require('lodash.sortby')
 var pick = require('lodash.pick')
 
+var server = app.listen(0, function () {
+  const host = server.address().address
+  const port = server.address().port
+  console.log('app listening at http://%s:%s', host, port)
+})
+
+module.exports = app
+
 app.use(express.static('public'))
 
+// Get JSON DATA
 app.get('/participants', function (req, res) {
   readFile('./public/data.json', 'utf8')
       .then(data => {
@@ -18,13 +27,7 @@ app.get('/participants', function (req, res) {
       })
 })
 
-var server = app.listen(3000, function () {
-  const host = server.address().address
-  const port = server.address().port
-
-  console.log('app listening at http://%s:%s', host, port)
-})
-
+// GET CLASSLIST OF PARTICIPANTS & PROVIDE SORT
 app.get('/participants/:name', function (req, res) {
   readFile('./public/data.json', 'utf8')
       .then(data => {
@@ -32,10 +35,6 @@ app.get('/participants/:name', function (req, res) {
       }).then(data => {
         const obj = JSON.parse(data)
         var students = obj.students
-        // var studentNames = students.map(student => student.name.toLowerCase().split(' '))
-        // var response = studentNames.filter(studentName => {
-        //   return includes(studentName, req.params.name)
-        // })
         var people = students.filter(student => {
           return includes(student.name.toLowerCase().split(' '), req.params.name)
         })
@@ -49,6 +48,7 @@ app.get('/participants/:name', function (req, res) {
       })
 })
 
+// PROVIDE SEARCH FUNCTION
 app.get('/search', function (req, res) {
   console.log(req.query.fields)
   readFile('./public/data.json', 'utf8')
